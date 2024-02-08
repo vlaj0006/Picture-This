@@ -30,6 +30,7 @@ h4 {
 }
 
 img {
+  max-width: 100%;
   display: block;
 }
 
@@ -38,3 +39,21 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+  @media (max-width: 959px) {
+    .landscape {
+      display: block;
+    }
+    .square {
+      display: none;
+    }
+  }
+
+  @media (min-width: 960px) {
+    .landscape {
+      display: none;
+    }
+    .square {
+      display: block;
+    }
+  }
